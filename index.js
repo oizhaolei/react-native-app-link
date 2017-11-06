@@ -14,7 +14,7 @@ export const maybeOpenURL = async (
         Linking.openURL(`https://itunes.apple.com/${locale}/app/${appStoreId}`);
       } else {
         Linking.openURL(
-          `https://play.google.com/store/apps/details?id=${playStoreId}`
+          `market://details?id=${playStoreId}`
         );
       }
     } else {
@@ -28,7 +28,7 @@ export const openInStore = async (appStoreId, playStoreId) => {
     Linking.openURL(`https://itunes.apple.com/us/app/${appStoreId}`);
   } else {
     Linking.openURL(
-      `https://play.google.com/store/apps/details?id=${playStoreId}`
+      `market://details?id=${playStoreId}`
     );
   }
 };
